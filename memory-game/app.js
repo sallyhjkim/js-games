@@ -1,4 +1,4 @@
-import { Confetti } from "./confetti.js";
+import { Confetti } from "../confetti/confetti.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const EMPTY = "images/empty.png";
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     let cardArray = [...options, ...options];
-    cardArray.sort(() => 0.5 - Math.random()); // shuffle the cards
+    // cardArray.sort(() => 0.5 - Math.random()); // shuffle the cards
 
     const grid = document.querySelector(".grid");
     let cardChosen = [];

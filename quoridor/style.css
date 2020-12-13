@@ -1,0 +1,62 @@
+#gameSpace {
+    display: grid;
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(9, 100px);
+    cursor: pointer;
+}
+#p0 {
+    color: red;
+}
+.grid {
+    position: relative;
+    display: inline-flex;
+}
+.gridCenter {
+    background-color: brown;
+    width: 100px;
+    height: 88px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 14px;
+}
+.gridRight {
+    background-color: black;
+    width: 10px;
+    height: 86px;
+    position: absolute;
+    border: 1px dashed;
+}
+.gridDown {
+    background-color: black;
+    width: 86px;
+    height: 10px;
+    border: 1px dashed;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.gridRight:hover,
+.gridDown:hover {
+    background-color: darkorange;
+}
+
+.gridCenter:hover {
+    background-color: red !important;
+}
+.staticBlocker {
+    background-color: white;
+    border: 1px dashed white;
+}
+.staticBlocker:hover {
+    background-color: white;
+}
+#winMsg {
+    position: fixed;
+    top: 30%;
+    background: red;
+    border: 10px solid;
+    left: 4%;
+    font-size: 100px;
+    width: fit-content;
+    display: none;
+}
