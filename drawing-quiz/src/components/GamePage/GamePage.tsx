@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { DrawingPane } from "../layout/DrawingPane";
 
 export const GamePage = () => {
     const HEADER_HEIGHT = 8;
@@ -40,7 +41,7 @@ export const GamePage = () => {
                     <div> test</div>
                 </LeftPanel>
                 <CenterPanel>
-                    <div> test</div>
+                    <DrawingPane />
                 </CenterPanel>
                 <RightPanel>
                     <div> test</div>
